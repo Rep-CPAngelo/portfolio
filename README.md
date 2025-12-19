@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Adjustable Template
 
-## Getting Started
+A premium, responsive portfolio template built with **Next.js**. Designed to be easily adjustable, performant, and visually striking with a sophisticated dark-blue color theme.
 
-First, run the development server:
+## 🎨 Features
+
+- **Premium Design**: Modern aesthetic with a curated color palette of deep blues and warm cream text.
+- **Fully Adjustable**: Change the entire color scheme instantly via CSS Variables.
+- **Performance First**: Built on Next.js 14/15 App Router for speed and SEO.
+- **Responsive**: Flawless experience on mobile, tablet, and desktop.
+- **Animations**: Subtle, high-quality entrance animations and hover effects.
+
+## 🛠 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (React)
+- **Styling**: Standard CSS Modules & CSS Variables (No complex build steps for styles)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Fonts**: [Outfit](https://fonts.google.com/specimen/Outfit) & [Inter](https://fonts.google.com/specimen/Inter) via `next/font`
+
+## 🚀 Getting Started
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Changing Colors
 
-## Learn More
+Navigate to `app/globals.css` and simply update the variables at the top:
 
-To learn more about Next.js, take a look at the following resources:
+```css
+:root {
+  --primary-dark: #213448;
+  --secondary-blue: #547792;
+  --soft-blue: #94b4c1;
+  --cream-text: #eae0cf;
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Adding Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Edit `components/Projects.js` to modify the `projects` array with your own work.
 
-## Deploy on Vercel
+## 📦 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is optimized for deployment on [Vercel](https://vercel.com).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  Push your code to GitHub.
+2.  Import the project in Vercel.
+3.  Deploy.
+
+See the [Deployment Guide](.agent/workflows/deploy_to_vercel.md) for detailed steps.
+
+## 📄 License
+
+This project is open source and available for personal use.
